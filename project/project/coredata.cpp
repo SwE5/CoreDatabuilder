@@ -324,6 +324,7 @@ void coredata::items_dat()
 				// TODO: find what those data mean
 				memPos += 13;
 			}
+                        if (itemsdatVersion >= 13) memPos += 4;
 			LoadItem(clothingType, name, itemID, breakHits, actionType);
 		}
 		cout << "[BUILDER] FINISHED!" << endl;
